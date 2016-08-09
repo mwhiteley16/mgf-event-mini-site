@@ -1,6 +1,12 @@
 ## Mini Site Readme
 
-This child theme is a template for the Mobile Growth Fellowship mini-sites.  It is reusable and requires the Mobile Growth Functionality Plugin
+This child theme is a template for the Mobile Growth Fellowship mini-sites.
+
+## Requirements
+
+  - Genesis FrameWork
+  - Advanced Custom Fields Pro Plugin
+  - Mobile Growth Functionality Plugin (see other repository)
 
 ## Changelog
 
