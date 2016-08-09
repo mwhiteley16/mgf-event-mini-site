@@ -1,0 +1,134 @@
+{
+    "key": "group_55748d7250130",
+    "title": "Speakers Metadata",
+    "fields": [
+        {
+            "key": "field_55748d962bf7e",
+            "label": "Title",
+            "name": "speaker_title",
+            "type": "text",
+            "instructions": "Enter the title of the speaker",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5575d90231cb7",
+            "label": "Speaker Country",
+            "name": "speaker_country",
+            "type": "text",
+            "instructions": "Enter the country of the speaker.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55748db52bf7f",
+            "label": "Company",
+            "name": "speaker_company",
+            "type": "text",
+            "instructions": "Enter the company of the speaker.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55748dcb2bf80",
+            "label": "Company Logo",
+            "name": "company_logo",
+            "type": "image",
+            "instructions": "Upload the logo of the company for the speaker.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_55748df22bf81",
+            "label": "Featured Speaker",
+            "name": "featured_speaker",
+            "type": "checkbox",
+            "instructions": "Check if you would like this speaker to show up on the home page as a featured speaker.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes"
+            },
+            "default_value": {
+                "": ""
+            },
+            "layout": "vertical"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "speakers"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "categories"
+    ],
+    "modified": 1433949015
+}

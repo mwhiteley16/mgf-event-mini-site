@@ -1,0 +1,532 @@
+{
+    "key": "group_55745ba97ec74",
+    "title": "Home Page Options",
+    "fields": [
+        {
+            "key": "field_55746bbed1121",
+            "label": "Video or Slideshow",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55745bc56ff5c",
+            "label": "Use Video or Slideshow on Home Page",
+            "name": "home_video_slide_choice",
+            "type": "select",
+            "instructions": "Choose whether you'd like to use a video or a slideshow on the landing page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "{select one}": "{select one}",
+                "Video": "Video",
+                "Slideshow": "Slideshow"
+            },
+            "default_value": {
+                "": ""
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_5574627954af4",
+            "label": "Event Details",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55745ceb6ff5e",
+            "label": "Event Name",
+            "name": "home_event_name",
+            "type": "text",
+            "instructions": "Enter the name of the event.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55745d066ff5f",
+            "label": "Event Date (Display)",
+            "name": "home_event_date",
+            "type": "text",
+            "instructions": "Enter the date(s) of the event to be shown on landing page.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55745da16ff61",
+            "label": "Event Location",
+            "name": "home_event_location",
+            "type": "text",
+            "instructions": "Enter the location(s) of the event.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55745d3e6ff60",
+            "label": "Event Date (Data)",
+            "name": "home_event_date_data",
+            "type": "date_picker",
+            "instructions": "Enter the start date of the event.  This is used for logic calculations for number of days until event.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "display_format": "m\/d\/Y",
+            "return_format": "m\/d\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_5574629754af5",
+            "label": "Video Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55745f325648c",
+            "label": "Video Image",
+            "name": "home_video_image",
+            "type": "image",
+            "instructions": "Enter an image to use as a fallback while the video loads or if the browser does not support native HTML5 video.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_557acb8dab35c",
+            "label": "Mobile Video Poster",
+            "name": "mobile_video_poster",
+            "type": "image",
+            "instructions": "Enter Image to show on mobile in place of the video.  Dimensions 595px by 495px. ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_55745f685648d",
+            "label": "Video URL MP4",
+            "name": "home_video_url_mp4",
+            "type": "text",
+            "instructions": "Enter the URL to the MP4 version of the video.  Multiple video formats are needed to support various browsers.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55745f955648e",
+            "label": "Video URL WebM",
+            "name": "home_video_url_webm",
+            "type": "text",
+            "instructions": "Enter the URL to the Webm version of the video.  Multiple video formats are needed to support various browsers.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55745bc56ff5c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55746bd3d1122",
+            "label": "Section 2",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55746c2e0c210",
+            "label": "Main Header",
+            "name": "section2_header",
+            "type": "text",
+            "instructions": "Enter the text for the header under the media.  This will be the H1 tag on the page and is the large red font with the event title.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55746c600c211",
+            "label": "Event Location",
+            "name": "section2_event_location",
+            "type": "text",
+            "instructions": "Enter the location of this event.  This will be displayed under the main headline for the event.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55746c830c212",
+            "label": "Event Date",
+            "name": "section2_event_date",
+            "type": "text",
+            "instructions": "Enter the date of this even how  you would like it to display under the main text on the landing page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55746caa0c213",
+            "label": "Event Description",
+            "name": "section2_event_description",
+            "type": "textarea",
+            "instructions": "Enter the description for the event to display on the home page.  Paragraphs are automatically added.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55759072bd240",
+            "label": "Venue",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_55758fe7bd23e",
+            "label": "Venue Image",
+            "name": "home_venue_image",
+            "type": "image",
+            "instructions": "Upload the image you'd like to use for the venue on the home page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_557590f9e3d4f",
+            "label": "Venue Image Alt",
+            "name": "home_venue_image_alt",
+            "type": "text",
+            "instructions": "Enter the Alt tag text for the venue image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55759000bd23f",
+            "label": "Venue Content",
+            "name": "home_venue_content",
+            "type": "textarea",
+            "instructions": "Enter the content you'd like to show in the red overlay of the venue area.  Line breaks are automatically added.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page_home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "the_content",
+        "custom_fields",
+        "discussion",
+        "revisions",
+        "featured_image",
+        "categories"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1449497396
+}

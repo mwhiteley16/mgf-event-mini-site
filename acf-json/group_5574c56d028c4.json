@@ -1,0 +1,91 @@
+{
+    "key": "group_5574c56d028c4",
+    "title": "Sponsors Meta",
+    "fields": [
+        {
+            "key": "field_5574c5956d102",
+            "label": "Sponsor Logo",
+            "name": "sponsor_logo",
+            "type": "image",
+            "instructions": "Upload the image for the sponsor.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5574c5d66d103",
+            "label": "Sponsor Logo Alt",
+            "name": "sponsor_logo_alt",
+            "type": "text",
+            "instructions": "Enter the text to use for the Sponsor Logo Alt tag.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5574c5eb6d104",
+            "label": "Sponsor Link",
+            "name": "sponsor_link",
+            "type": "text",
+            "instructions": "Enter the URL you want the sponsor to link to.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "wd_sponsors"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "modified": 1434013079
+}

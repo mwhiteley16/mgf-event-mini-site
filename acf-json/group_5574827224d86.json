@@ -1,0 +1,108 @@
+{
+    "key": "group_5574827224d86",
+    "title": "\"Keynotes By\" Section",
+    "fields": [
+        {
+            "key": "field_557482c0633fc",
+            "label": "Keynotes By:",
+            "name": "keynotes_by",
+            "type": "repeater",
+            "instructions": "Enter each 'Keynotes By' logo and link using this repeating feild.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "layout": "table",
+            "button_label": "Add Keynote",
+            "sub_fields": [
+                {
+                    "key": "field_557482e3633fd",
+                    "label": "Name",
+                    "name": "keynote_name",
+                    "type": "text",
+                    "instructions": "Enter the name for this Keynote.  The name is also used as the ALT attribute on the image.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 25,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5574830a633fe",
+                    "label": "Logo",
+                    "name": "keynote_logo",
+                    "type": "image",
+                    "instructions": "Upload the logo for this Keynote.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 25,
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "full",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_55748329633ff",
+                    "label": "Link",
+                    "name": "keynote_link",
+                    "type": "text",
+                    "instructions": "Enter the URL for this Keynote to link to.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "mgf-options-page"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "modified": 1433699673
+}

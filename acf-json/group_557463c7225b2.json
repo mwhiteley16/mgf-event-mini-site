@@ -1,0 +1,147 @@
+{
+    "key": "group_557463c7225b2",
+    "title": "Generic Options",
+    "fields": [
+        {
+            "key": "field_557463cdfa82f",
+            "label": "Site Logo",
+            "name": "site_logo",
+            "type": "image",
+            "instructions": "Enter the image you'd like to use as the logo.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_55746529a943e",
+            "label": "Site Logo Alt Text",
+            "name": "site_logo_alt_text",
+            "type": "text",
+            "instructions": "Add the text you'd like to use as the 'ALT' text for the logo.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55759f122237f",
+            "label": "Link or Iframe",
+            "name": "link_or_iframe",
+            "type": "checkbox",
+            "instructions": "Choose whether you'd like the register now button to link to another page or if you'd like to input iframe code and show it directly on the site.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "External Link": "External Link",
+                "Iframe": "Iframe"
+            },
+            "default_value": {
+                "": ""
+            },
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_55747ec54dbf2",
+            "label": "Register Now Header Link",
+            "name": "register_now_header_link",
+            "type": "text",
+            "instructions": "Enter the link to the page you want the 'Register Now' button in the header to link to.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55759f122237f",
+                        "operator": "==",
+                        "value": "External Link"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55759f5b22380",
+            "label": "Register Now Iframe",
+            "name": "register_now_iframe",
+            "type": "textarea",
+            "instructions": "Copy\/Paste the iFrame code for the event registration.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_55759f122237f",
+                        "operator": "==",
+                        "value": "Iframe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "mgf-options-page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "modified": 1433771929
+}

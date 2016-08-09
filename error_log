@@ -1,0 +1,11 @@
+[19-Dec-2015 21:29:19 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/index.php on line 7
+[26-Jan-2016 11:26:03 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/index.php on line 7
+[03-Feb-2016 17:12:20 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/index.php on line 7
+[09-Feb-2016 10:03:25 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/index.php on line 7
+[01-Mar-2016 13:28:36 America/New_York] PHP Fatal error:  Call to undefined function get_template_directory() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/functions.php on line 14
+[01-Mar-2016 13:28:38 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/404.php on line 1
+[01-Mar-2016 13:28:38 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/404.php on line 1
+[13-Mar-2016 15:55:38 America/New_York] PHP Fatal error:  Call to undefined function get_template_directory() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/functions.php on line 14
+[13-Mar-2016 15:55:39 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/404.php on line 1
+[13-Mar-2016 18:56:53 America/New_York] PHP Fatal error:  Call to undefined function get_template_directory() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/functions.php on line 14
+[13-Mar-2016 18:56:53 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/mgs16/public_html/wp-content/themes/mgf-event-site/404.php on line 1
