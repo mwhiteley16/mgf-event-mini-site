@@ -19,7 +19,7 @@ Template Name: Schedule Page Template
      <div class="interior-wrap">
 
           <article class="main-content <?php echo the_title(); ?>">
-          
+
                <div class="page-title-wrap">
                     <h1 class="page-header">
                          <span><?php the_title(); ?></span>
@@ -27,12 +27,12 @@ Template Name: Schedule Page Template
                </div>
 
                <div class="page-content">
-                    
+
                     <?php if( have_rows('schedule_date') ):
-				     $dateCount = 1; 
-                         $numDates = count( get_field('schedule_date')); 
+				     $dateCount = 1;
+                         $numDates = count( get_field('schedule_date'));
                          if( $numDates == 1 ) {
-                              $columnCount = 'full-width';  
+                              $columnCount = 'full-width';
                          } elseif( $numDates == 2 ) {
                               $columnCount = 'one-half';
                          } elseif( $numDates == 3 ) {
@@ -55,7 +55,7 @@ Template Name: Schedule Page Template
                               <div id="date-<?php echo $subDateCount; ?>" class="schedule-items-container <?php if( $subDateCount == 1 ) : ?>active<?php endif; ?>">
                                    <?php if( have_rows('event_date_schedule') ):
 							     while( have_rows('event_date_schedule') ): the_row();
-						    	     
+
                                         $schedule_item_type_field = get_sub_field('schedule_item_type');
 							     $schedule_item_time = get_sub_field('schedule_item_time');
 							     $schedule_item_name = get_sub_field('schedule_item_name');
@@ -80,19 +80,19 @@ Template Name: Schedule Page Template
                          <?php $subDateCount++;
                          endwhile;
 				endif; ?>
-				
+
 				<div class="full-width color-key">
 				     <span class="full-width text-center">* agenda is subject to change</span>
-				     <div class="one-sixth first text-center dark-red">MGF Talk</div>
-				     <div class="one-sixth second text-center red">KEYNOTE</div>
-				     <div class="one-sixth third text-center dark-blue">Presentation</div>
-				     <div class="one-sixth fourth text-center blue">Sponsor</div>
-				     <div class="one-sixth fifth text-center green">Panel</div>
-				     <div class="one-sixth sixth text-center orange">MGF Event</div>
+				     <div class="one-fifth first text-center dark-red">MGF Talk</div>
+				     <div class="one-fifth second text-center red">KEYNOTE</div>
+				     <div class="one-fifth third text-center dark-blue">Presentation</div>
+				     <div class="one-sixth fourth text-center blue" style="display:none;">Sponsor</div> <?php // hidden per Louis on 11/18/2016 ?>
+				     <div class="one-fifth fifth text-center green">Panel</div>
+				     <div class="one-fifth sixth text-center orange">MGF Event</div>
 				</div>
 
                </div>
-               
+
                <script>
                jQuery(document).ready(function() {
                  // toggle the active class on the date containers to show the proper date based on the day clicked
