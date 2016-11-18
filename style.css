@@ -295,6 +295,7 @@ body .gform_confirmation_message {
 }
 .header-con img {
      margin-top: 7px;
+     max-width: 353px;
 }
 /*---------- 2.1 Registration Popup  ----------*/
 .register-now-container {
