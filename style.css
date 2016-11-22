@@ -1,5 +1,4 @@
-/*
-	Theme Name: Mobile Growth Fellowship Event Theme
+/*	Theme Name: Mobile Growth Fellowship Event Theme
 	Description: Child theme of Genesis, by <a href="http://www.whiteleydesigns.com">Whiteley Designs</a>.
 	Author: Matt Whiteley
 	Author URI: http://whiteleydesigns.com
@@ -295,7 +294,6 @@ body .gform_confirmation_message {
 }
 .header-con img {
      margin-top: 7px;
-     max-width: 353px;
 }
 /*---------- 2.1 Registration Popup  ----------*/
 .register-now-container {
@@ -539,8 +537,25 @@ a.home-registration-link:hover {
      text-align: center;
 }
 .keynote-logo-wrapper .keynote-item {
-     float: left;
-     display: inline-block;
+	text-align: center;
+	height: 165px;
+	display: inline-block;
+	float: none;
+	width: 32.333333333% !important;
+	margin: .5%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	position: relative;
+}
+.keynote-item a img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	max-height: 125px;
+	max-width: 95%;
 }
 /*---------- 4.4 Featured Speakers Section  ----------*/
 .featured-speakers {
