@@ -44,6 +44,10 @@ jQuery(document).ready(function() {
     event.preventDefault();
     jQuery('.register-now-container').fadeIn();
   });
+  jQuery('li.registration-menu-link a').click(function(event) {
+     event.preventDefault();
+     jQuery('.register-now-container').fadeIn();
+  });   
   // close it when you click the 'x'
   jQuery('i.close-registration').click(function() {
     jQuery('.register-now-container').fadeOut();
