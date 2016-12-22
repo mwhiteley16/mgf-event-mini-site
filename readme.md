@@ -15,7 +15,7 @@ Version 1.0 (08/08/2016)
   
 ## Current Sites Using Template
 
-mobilegrowthsummit.com
-mobilegrowthasia.com
-mobilegrowtheurope.com
-mobilegrowthbrands.com
+  - mobilegrowthsummit.com
+  - mobilegrowthasia.com
+  - mobilegrowtheurope.com
+  - mobilegrowthbrands.com
