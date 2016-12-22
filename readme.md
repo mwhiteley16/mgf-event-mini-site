@@ -12,3 +12,10 @@ This child theme is a template for the Mobile Growth Fellowship mini-sites.
 
 Version 1.0 (08/08/2016)
   - Initial Commit
+  
+## Current Sites Using Template
+
+mobilegrowthsummit.com
+mobilegrowthasia.com
+mobilegrowtheurope.com
+mobilegrowthbrands.com
