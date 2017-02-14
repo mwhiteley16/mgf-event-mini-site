@@ -56,10 +56,11 @@ Template Name: Schedule Page Template
                                    <?php if( have_rows('event_date_schedule') ):
 							     while( have_rows('event_date_schedule') ): the_row();
 
-                                        $schedule_item_type_field = get_sub_field('schedule_item_type');
-							     $schedule_item_time = get_sub_field('schedule_item_time');
-							     $schedule_item_name = get_sub_field('schedule_item_name');
-							     $schedule_item_content = get_sub_field('schedule_item_content'); ?>
+                                        $schedule_item_type_field = get_sub_field( 'schedule_item_type' );
+							     $schedule_item_time = get_sub_field( 'schedule_item_time' );
+							     $schedule_item_name = get_sub_field( 'schedule_item_name' );
+							     $schedule_item_content = get_sub_field( 'schedule_item_content' );
+                                        $schedule_item_speakers = get_sub_field( 'schedule_item_speaker' ); ?>
 
                                         <div class="schedule-item-inner">
                                              <div class="event-time"><?php echo $schedule_item_time; ?></div>
@@ -69,6 +70,40 @@ Template Name: Schedule Page Template
                                                        <?php if( !empty( $schedule_item_content ) ) : ?>
                                                             <i class="fa fa-plus-square"></i>
                                                             <div class="schedule-item-additional"><?php echo $schedule_item_content; ?></div>
+                                                       <?php endif; ?>
+                                                       <?php if( $schedule_item_speakers ): ?>
+                                                            <ul class="schedule-speakers-ul">
+                                                                 <?php $speaker_count = 0; ?>
+                                                                 <?php foreach( $schedule_item_speakers as $post) : $speaker_count++; ?>
+                                                                      <?php
+                                                                      setup_postdata($post);
+                                                                      $speakers_thumbnail = get_the_post_thumbnail();
+                                                                      $speakers_name = get_the_title();
+                                                                      $speakers_company = get_field( 'speaker_company' );
+                                                                      $speakers_title = get_field( 'speaker_title' );
+                                                                      ?>
+                                                                      <li class="speaker-count-<?php echo $speaker_count; ?> <?php if( $speaker_count < 5 ) : ?>top-speaker-row<?php endif; ?> <?php if( ( $speaker_count - 1 ) % 4 == 0 ) : ?>first<?php endif; ?>">
+                                                                           <?php if( $speakers_thumbnail ) : ?>
+                                                                                <div class="schedule-speakers-thumb-con-wrapper">
+                                                                                     <div class="schedule-speakers-thumb-con">
+                                                                                          <?php echo $speakers_thumbnail; ?>
+                                                                                     </div>
+                                                                                     <?php if( $speaker_count == 1 ) : ?><span class="moderator-tag">Moderator</span><?php endif; ?>
+                                                                                </div>
+                                                                           <?php endif; ?>
+                                                                           <?php if( $speakers_name ) : ?>
+                                                                                <span class="schedule-speakers-name"><?php echo $speakers_name; ?></span>
+                                                                           <?php endif; ?>
+                                                                           <?php if( $speakers_title ) : ?>
+                                                                                <span class="schedule-speakers-title"><?php echo $speakers_title; ?></span>
+                                                                           <?php endif; ?>
+                                                                           <?php if( $speakers_company ) : ?>
+                                                                                <span class="schedule-speakers-company"><?php echo $speakers_company; ?></span>
+                                                                           <?php endif; ?>
+                                                                      </li>
+                                                                 <?php endforeach; ?>
+                                                            </ul>
+                                                            <?php wp_reset_postdata(); ?>
                                                        <?php endif; ?>
                                                   </div>
                                              </div>
@@ -106,6 +141,7 @@ Template Name: Schedule Page Template
                  jQuery('.schedule-event-item-inner-con i.fa').click(function() {
                    jQuery(this).toggleClass('fa-plus-square fa-minus-square');
                    jQuery(this).siblings('.schedule-item-additional').slideToggle();
+                   jQuery(this).siblings('ul.schedule-speakers-ul').slideToggle();
                  });
                });
                </script>
