@@ -12,6 +12,7 @@ This child theme is a template for the Mobile Growth Fellowship mini-sites.
 
 Version 1.1 (02/14/2017)
   - Create Post Object field to allow speakers to show on specified schedule items
+  
 Version 1.0 (08/08/2016)
   - Initial Commit
   
