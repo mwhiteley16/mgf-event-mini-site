@@ -294,7 +294,6 @@ body .gform_confirmation_message {
 }
 .header-con img {
      margin-top: 7px;
-     max-width: 353px;
 }
 /*---------- 2.1 Registration Popup  ----------*/
 .register-now-container {
@@ -542,7 +541,7 @@ a.home-registration-link:hover {
 }
 .keynote-logo-wrapper .keynote-item {
 	text-align: center;
-	height: 165px;
+	height: auto;
 	display: inline-block;
 	float: none;
 	width: 32.333333333% !important;
@@ -917,6 +916,84 @@ h1.page-header span:after {
      font-weight: 500;
      font-size: 18px;
      border-radius: 2px;
+}
+ul.schedule-speakers-ul {
+	display: none;
+	float: left;
+     width: 100%;
+     margin: 0 0 15px 0;
+     padding: 0 15px;
+}
+ul.schedule-speakers-ul li {
+	float: left;
+	width: 22%;
+	margin-left: 4%;
+	margin-top: 15px;
+	list-style-type: none;
+}
+ul.schedule-speakers-ul li.first {
+	margin-left: 0;
+}
+ul.schedule-speakers-ul li.top-speaker-row {
+	margin-top: 0;
+}
+.schedule-speakers-thumb-con-wrapper {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.schedule-speakers-thumb-con {
+	float: left;
+     width: 100%;
+     border-radius: 50%;
+     overflow: hidden;
+}
+.moderator-tag {
+	display: none;
+	position: absolute;
+     bottom: 10px;
+     left: 0;
+     width: 100%;
+     text-align: center;
+     background-color: rgba(255,255,255,0.8);
+     border-radius: 3px;
+     color: #333;
+     text-transform: uppercase;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 18px;
+     padding: 5px 5px;
+}
+.green .moderator-tag {
+	display: block;
+}
+.schedule-speakers-thumb-con img {
+	float: left;
+	width: 100%;
+}
+.schedule-speakers-name {
+	float: left;
+     width: 100%;
+     text-align: center;
+     margin-top: 10px;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 16px;
+}
+.schedule-speakers-title {
+	float: left;
+	width: 100%;
+	text-align: center;
+	line-height: 16px;
+	margin-top: 5px;
+}
+.schedule-speakers-company {
+	float: left;
+     width: 100%;
+     text-align: center;
+     font-weight: 500;
+     font-size: 15px;
+	margin-top: 2px;
 }
 /* ---------- 6.2 Awards Page ---------- */
 .nomination-button-con {
@@ -1320,6 +1397,36 @@ a.home-registration-link {
 .color-key div.one-sixth.fourth {
      clear: both;
      margin-left: 0;
+}
+}
+@media(max-width: 700px) {
+/***** Schedule Page *****/
+ul.schedule-speakers-ul li {
+	width: 48%;
+}
+ul.schedule-speakers-ul li:nth-child(odd) {
+	margin-left: 0;
+	clear: both;
+}
+ul.schedule-speakers-ul li.top-speaker-row {
+	margin-top: 15px;
+}
+ul.schedule-speakers-ul li.top-speaker-row.speaker-count-1,
+ul.schedule-speakers-ul li.top-speaker-row.speaker-count-2 {
+	margin-top: 0;
+}
+ul.schedule-speakers-ul li.speaker-count-1:last-child,
+ul.schedule-speakers-ul li.speaker-count-3:last-child,
+ul.schedule-speakers-ul li.speaker-count-5:last-child,
+ul.schedule-speakers-ul li.speaker-count-7:last-child,
+ul.schedule-speakers-ul li.speaker-count-9:last-child {
+	margin-left: 26%;
+}
+.moderator-tag {
+	line-height: 15px;
+	font-size: 15px;
+	padding: 3px;
+	font-weight: 600;
 }
 }
 /*---------- 20.2 Mobile Sized ----------*/
