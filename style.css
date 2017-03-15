@@ -295,6 +295,7 @@ body .gform_confirmation_message {
 .header-con img {
      margin-top: 7px;
      max-width: 353px;
+     max-height: 88px;
 }
 /*---------- 2.1 Registration Popup  ----------*/
 .register-now-container {
@@ -1471,6 +1472,7 @@ ul.schedule-speakers-ul li.speaker-count-9:last-child {
 }
 .header-con img {
      margin-left: 0;
+     max-width: 100%;
 }
 a.register-now {
      display: none;
