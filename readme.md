@@ -21,4 +21,5 @@ Version 1.0 (08/08/2016)
   - mobilegrowthsummit.com
   - mobilegrowthasia.com
   - mobilegrowtheurope.com
-  - mobilegrowthbrands.com
+  - mobilegrowthbrands.com (redirects to mobilegrowthnewyork.com as of 3/9/17)
+  - mobilegrowthnewyork.com
