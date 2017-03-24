@@ -1,3 +1,8 @@
+<?php $custom_css = get_field( 'custom_css', 'option' );
+if( $custom_css ) : ?>
+     <style><?php echo $custom_css; ?></style>
+<?php endif; ?>
+
 <section class="header-con">
      <a href="<?php echo get_home_url(); ?>"><img src="<?php the_field('site_logo', 'option'); ?>" alt="<?php the_field('site_logo_alt_text', 'option'); ?>"></a>
      <a class="register-now" href="<?php the_field('register_now_header_link', 'option'); ?>" target="_blank">Register Now</a>
