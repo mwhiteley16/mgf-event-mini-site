@@ -116,15 +116,19 @@ Template Name: Schedule Page Template
                          endwhile;
 				endif; ?>
 
-				<div class="full-width color-key">
-				     <span class="full-width text-center">* agenda is subject to change</span>
-				     <div class="one-fifth first text-center dark-red">MGF Talk</div>
-				     <div class="one-fifth second text-center red">KEYNOTE</div>
-				     <div class="one-fifth third text-center dark-blue">Presentation</div>
-				     <div class="one-sixth fourth text-center blue" style="display:none;">Sponsor</div> <?php // hidden per Louis on 11/18/2016 ?>
-				     <div class="one-fifth fifth text-center green">Panel</div>
-				     <div class="one-fifth sixth text-center orange">MGF Event</div>
-				</div>
+                    <?php $show_key = get_field( 'schedule_key_visibility' ); ?>
+
+                    <div class="full-width color-key">
+                         <span class="full-width text-center">* agenda is subject to change</span>
+                         <?php if( $show_key == 'show-key' ) : ?>
+                              <div class="one-fifth first text-center dark-red">MGF Talk</div>
+                              <div class="one-fifth second text-center red">KEYNOTE</div>
+                              <div class="one-fifth third text-center dark-blue">Presentation</div>
+                              <div class="one-sixth fourth text-center blue" style="display:none;">Sponsor</div> <?php // hidden per Louis on 11/18/2016 ?>
+                              <div class="one-fifth fifth text-center green">Panel</div>
+                              <div class="one-fifth sixth text-center orange">MGF Event</div>
+                         <?php endif; ?>
+                    </div>
 
                </div>
 
