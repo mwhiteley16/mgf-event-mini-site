@@ -1,0 +1,51 @@
+{
+    "key": "group_58d6819703eda",
+    "title": "Schedule Key Toggle",
+    "fields": [
+        {
+            "key": "field_58d681af92fce",
+            "label": "Schedule Key Visibility",
+            "name": "schedule_key_visibility",
+            "type": "select",
+            "instructions": "Would you like to show the schedule key?",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "show-key": "Show Key",
+                "hide-key": "Hide Key"
+            },
+            "default_value": [
+                "show-key"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page_schedule.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490453030
+}
