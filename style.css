@@ -1594,4 +1594,19 @@ h1.page-header {
      width: 100%;
      padding-left: 0;
 }
+/***** Home Video Autoplay on Mobile *****/
+.home-bg {
+     min-height: 450px;
+}
+img.mobile-poster {
+     display: none;
+}
+video#bgvid {
+     display: block;
+     width: auto;
+     height: 100%;
+     margin-left: -50%;
+     position: absolute;
+     top: 0;
+}
 }
