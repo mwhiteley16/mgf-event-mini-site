@@ -10,6 +10,9 @@ This child theme is a template for the Mobile Growth Fellowship mini-sites.
 
 ## Changelog
 
+Version 1.2 (4/10/2017)
+  - Background Videos now autoplay on mobile
+
 Version 1.1 (02/14/2017)
   - Create Post Object field to allow speakers to show on specified schedule items
   
