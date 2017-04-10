@@ -13,7 +13,7 @@ Template Name: Home Page Template
           <img class="mobile-poster" src="<?php the_field('mobile_video_poster'); ?>" alt="Mobile Growth Fellowship">
           <img class="tablet-poster" src="<?php the_field('home_video_image'); ?>" alt="Mobile Growth Fellowship">
 
-          <video id="bgvid" autoplay loop muted poster="<?php the_field('home_video_image'); ?>">
+          <video id="bgvid" autoplay loop muted playsinline poster="<?php the_field('home_video_image'); ?>">
                <source src="<?php the_field('home_video_url_mp4'); ?>" type='video/mp4'>
                <source src="<?php the_field('home_video_url_webm'); ?>" type='video/webm'>
           </video>
