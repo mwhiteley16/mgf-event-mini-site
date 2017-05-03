@@ -10,6 +10,10 @@ This child theme is a template for the Mobile Growth Fellowship mini-sites.
 
 ## Changelog
 
+Version 1.3 (5/3/2017)
+  - Add field to toggle 'Moderator' tag on schedule panels
+  - Modify Schedule page template to account for 'Moderator' field toggle
+
 Version 1.2 (4/10/2017)
   - Background Videos now autoplay on mobile
 
