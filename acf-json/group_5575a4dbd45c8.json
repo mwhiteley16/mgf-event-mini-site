@@ -1,215 +1,238 @@
-[
-    {
-        "key": "group_5575a4dbd45c8",
-        "title": "Schedule Setup",
-        "fields": [
-            {
-                "key": "field_5575a4fc316d3",
-                "label": "Schedule Date",
-                "name": "schedule_date",
-                "type": "repeater",
-                "instructions": "Create an event day.",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "min": "",
-                "max": "",
-                "layout": "row",
-                "button_label": "Add Date",
-                "collapsed": "",
-                "sub_fields": [
-                    {
-                        "key": "field_5575a53c316d4",
-                        "label": "Event Date",
-                        "name": "schedule_event_date",
-                        "type": "text",
-                        "instructions": "Enter the event date for this schedule as you'd like it displayed on the schedule page.",
-                        "required": 1,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
-                        },
-                        "default_value": "",
-                        "placeholder": "",
-                        "prepend": "",
-                        "append": "",
-                        "maxlength": "",
-                        "readonly": 0,
-                        "disabled": 0
+{
+    "key": "group_5575a4dbd45c8",
+    "title": "Schedule Setup",
+    "fields": [
+        {
+            "key": "field_5575a4fc316d3",
+            "label": "Schedule Date",
+            "name": "schedule_date",
+            "type": "repeater",
+            "instructions": "Create an event day.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Date",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_5575a53c316d4",
+                    "label": "Event Date",
+                    "name": "schedule_event_date",
+                    "type": "text",
+                    "instructions": "Enter the event date for this schedule as you'd like it displayed on the schedule page.",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
                     },
-                    {
-                        "key": "field_5575a569316d5",
-                        "label": "Event Date Schedule",
-                        "name": "event_date_schedule",
-                        "type": "repeater",
-                        "instructions": "Enter the times and events of this date.",
-                        "required": 0,
-                        "conditional_logic": 0,
-                        "wrapper": {
-                            "width": "",
-                            "class": "",
-                            "id": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_5575a569316d5",
+                    "label": "Event Date Schedule",
+                    "name": "event_date_schedule",
+                    "type": "repeater",
+                    "instructions": "Enter the times and events of this date.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Add Schedule Item",
+                    "sub_fields": [
+                        {
+                            "key": "field_5575a5fd316d8",
+                            "label": "Schedule Item Type",
+                            "name": "schedule_item_type",
+                            "type": "select",
+                            "instructions": "Choose the type of item this is.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "gray": "None (Gray Box)",
+                                "dark-red": "MGF Talk",
+                                "red": "KEYNOTE",
+                                "dark-blue": "Presentation",
+                                "blue": "Sponsor",
+                                "green": "Panel",
+                                "orange": "MGF Event"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
                         },
-                        "min": "",
-                        "max": "",
-                        "layout": "row",
-                        "button_label": "Add Schedule Item",
-                        "collapsed": "",
-                        "sub_fields": [
-                            {
-                                "key": "field_5575a5fd316d8",
-                                "label": "Schedule Item Type",
-                                "name": "schedule_item_type",
-                                "type": "select",
-                                "instructions": "Choose the type of item this is.",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": 50,
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "choices": {
-                                    "gray": "None (Gray Box)",
-                                    "dark-red": "MGF Talk",
-                                    "red": "KEYNOTE",
-                                    "dark-blue": "Presentation",
-                                    "blue": "Sponsor",
-                                    "green": "Panel",
-                                    "orange": "MGF Event"
-                                },
-                                "default_value": {
-                                    "": ""
-                                },
-                                "allow_null": 0,
-                                "multiple": 0,
-                                "ui": 0,
-                                "ajax": 0,
-                                "placeholder": "",
-                                "disabled": 0,
-                                "readonly": 0
+                        {
+                            "key": "field_5575a5b8316d6",
+                            "label": "Schedule Item Time",
+                            "name": "schedule_item_time",
+                            "type": "text",
+                            "instructions": "Enter the time of this schedule item.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5575a5b8316d6",
-                                "label": "Schedule Item Time",
-                                "name": "schedule_item_time",
-                                "type": "text",
-                                "instructions": "Enter the time of this schedule item.",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": 50,
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "placeholder": "",
-                                "prepend": "",
-                                "append": "",
-                                "maxlength": "",
-                                "readonly": 0,
-                                "disabled": 0
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5575a5d3316d7",
+                            "label": "Schedule Item Name",
+                            "name": "schedule_item_name",
+                            "type": "text",
+                            "instructions": "Enter the name of this schedule item.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5575a5d3316d7",
-                                "label": "Schedule Item Name",
-                                "name": "schedule_item_name",
-                                "type": "text",
-                                "instructions": "Enter the name of this schedule item.",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "placeholder": "",
-                                "prepend": "",
-                                "append": "",
-                                "maxlength": "",
-                                "readonly": 0,
-                                "disabled": 0
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_5575a653316d9",
+                            "label": "Schedule Item Content",
+                            "name": "schedule_item_content",
+                            "type": "textarea",
+                            "instructions": "Enter additional information about this item that will be shown when the container is expanded.  Line breaks automatically added.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_5575a653316d9",
-                                "label": "Schedule Item Content",
-                                "name": "schedule_item_content",
-                                "type": "textarea",
-                                "instructions": "Enter additional information about this item that will be shown when the container is expanded.  Line breaks automatically added.",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "default_value": "",
-                                "placeholder": "",
-                                "maxlength": "",
-                                "rows": "",
-                                "new_lines": "br",
-                                "readonly": 0,
-                                "disabled": 0
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": "br",
+                            "readonly": 0,
+                            "disabled": 0
+                        },
+                        {
+                            "key": "field_58a3245641422",
+                            "label": "Schedule Item Speaker",
+                            "name": "schedule_item_speaker",
+                            "type": "post_object",
+                            "instructions": "Select the speakers for this section (optional).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
                             },
-                            {
-                                "key": "field_589b4d722fac8",
-                                "label": "Schedule Item Speaker",
-                                "name": "schedule_item_speaker",
-                                "type": "post_object",
-                                "instructions": "",
-                                "required": 0,
-                                "conditional_logic": 0,
-                                "wrapper": {
-                                    "width": "",
-                                    "class": "",
-                                    "id": ""
-                                },
-                                "post_type": [
-                                    "speakers"
-                                ],
-                                "taxonomy": [],
-                                "allow_null": 0,
-                                "multiple": 1,
-                                "return_format": "id",
-                                "ui": 1
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "page_template",
-                    "operator": "==",
-                    "value": "page_schedule.php"
-                }
-            ],
-            [
-                {
-                    "param": "page_template",
-                    "operator": "==",
-                    "value": "page_awards.php"
+                            "post_type": [
+                                "speakers"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "id",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_5909c8141a6f7",
+                            "label": "Show Moderator",
+                            "name": "show_moderator",
+                            "type": "select",
+                            "instructions": "Would you like to show the 'moderator' tag on the first speaker?",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "no": "No",
+                                "yes": "Yes"
+                            },
+                            "default_value": [
+                                "yes"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        }
+                    ]
                 }
             ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page_schedule.php"
+            }
         ],
-        "menu_order": 2,
-        "position": "acf_after_title",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "field",
-        "hide_on_screen": [
-            "the_content"
-        ],
-        "active": 1,
-        "description": ""
-    }
-]
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page_awards.php"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1493813628
+}
