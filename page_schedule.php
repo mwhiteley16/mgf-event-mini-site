@@ -60,7 +60,8 @@ Template Name: Schedule Page Template
 							     $schedule_item_time = get_sub_field( 'schedule_item_time' );
 							     $schedule_item_name = get_sub_field( 'schedule_item_name' );
 							     $schedule_item_content = get_sub_field( 'schedule_item_content' );
-                                        $schedule_item_speakers = get_sub_field( 'schedule_item_speaker' ); ?>
+                                        $schedule_item_speakers = get_sub_field( 'schedule_item_speaker' );
+                                        $show_moderator = get_sub_field( 'show_moderator' ) ?>
 
                                         <div class="schedule-item-inner">
                                              <div class="event-time"><?php echo $schedule_item_time; ?></div>
@@ -88,7 +89,7 @@ Template Name: Schedule Page Template
                                                                                      <div class="schedule-speakers-thumb-con">
                                                                                           <?php echo $speakers_thumbnail; ?>
                                                                                      </div>
-                                                                                     <?php if( $speaker_count == 1 ) : ?><span class="moderator-tag">Moderator</span><?php endif; ?>
+                                                                                     <?php if( $speaker_count == 1 && $show_moderator == 'yes' ) : ?><span class="moderator-tag">Moderator</span><?php endif; ?>
                                                                                 </div>
                                                                            <?php endif; ?>
                                                                            <?php if( $speakers_name ) : ?>
