@@ -194,7 +194,7 @@
                                 "yes": "Yes"
                             },
                             "default_value": [
-                                "yes"
+                                "no"
                             ],
                             "allow_null": 0,
                             "multiple": 0,
