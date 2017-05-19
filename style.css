@@ -953,7 +953,6 @@ ul.schedule-speakers-ul li.top-speaker-row {
      overflow: hidden;
 }
 .moderator-tag {
-	display: none;
 	position: absolute;
      bottom: 10px;
      left: 0;
@@ -967,9 +966,6 @@ ul.schedule-speakers-ul li.top-speaker-row {
      font-size: 18px;
      line-height: 18px;
      padding: 5px 5px;
-}
-.green .moderator-tag {
-	display: block;
 }
 .schedule-speakers-thumb-con img {
 	float: left;
