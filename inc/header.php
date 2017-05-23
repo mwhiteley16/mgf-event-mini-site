@@ -47,6 +47,7 @@ if( $custom_css || $primary_color || $secondary_color ) : ?>
           a.register-now,
           a.home-registration-link,
           a.register-now:visited,
+		a.register-now:hover,
           a.home-register-link:visited,
           .schedule-date.active,
 		.schedule-item-inner .schedule-event-item-inner-con.green,
@@ -62,6 +63,10 @@ if( $custom_css || $primary_color || $secondary_color ) : ?>
           a, a:visited,
           .schedule-date i.fa {
                color: <?php echo $link_color; ?>;
+			-webkit-transition: all 300ms ease;
+			-moz-transition: all 300ms ease;
+			-o-transition: all 300ms ease;
+			transition: all 300ms ease;
           }
           ul#menu-main-menu > li:hover > a,
           ul#menu-main-menu > li.current-menu-parent a {
@@ -71,7 +76,8 @@ if( $custom_css || $primary_color || $secondary_color ) : ?>
           .home-section-2 h1,
           h2,
           .team-member-name,
-          h1.page-header span {
+          h1.page-header span,
+		.schedule-date:hover > i.fa {
                color: <?php echo $primary_color; ?>;
           }
           .venue-content-box,
