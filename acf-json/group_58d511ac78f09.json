@@ -3,6 +3,51 @@
     "title": "Custom CSS",
     "fields": [
         {
+            "key": "field_591ef6a321d94",
+            "label": "Primary  Color",
+            "name": "primary_color",
+            "type": "color_picker",
+            "instructions": "Choose the primary color for this site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#990000"
+        },
+        {
+            "key": "field_591ef68d21d93",
+            "label": "Link Color",
+            "name": "link_color",
+            "type": "color_picker",
+            "instructions": "Choose the link color for this site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#990000"
+        },
+        {
+            "key": "field_591f31903613c",
+            "label": "Secondary Color",
+            "name": "secondary_color",
+            "type": "color_picker",
+            "instructions": "Choose the secondary color for this site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#990000"
+        },
+        {
             "key": "field_58d511b586798",
             "label": "Custom CSS",
             "name": "custom_css",
@@ -39,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1490358890
+    "modified": 1495216680
 }
