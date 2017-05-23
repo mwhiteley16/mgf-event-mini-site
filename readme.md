@@ -10,6 +10,10 @@ This child theme is a template for the Mobile Growth Fellowship mini-sites.
 
 ## Changelog
 
+Version 1.4 (5/23/2017)
+  - Modify custom CSS area to allow for simple color picker color modification
+  - Update dropdowns on schedule to allow for simpler coloring
+
 Version 1.3.1 (5/3/2017)
   - Remove moderator tag hide so it is usable on all schedule items
 
