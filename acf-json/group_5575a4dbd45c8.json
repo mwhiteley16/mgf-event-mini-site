@@ -76,12 +76,11 @@
                             },
                             "choices": {
                                 "gray": "None (Gray Box)",
-                                "dark-red": "MGF Talk",
-                                "red": "KEYNOTE",
+                                "dark-red": "Dark Red",
+                                "red": "Light Red",
                                 "dark-blue": "Presentation",
-                                "blue": "Sponsor",
-                                "green": "Panel",
-                                "orange": "MGF Event"
+                                "blue": "Panel",
+                                "green": "Featured Panel"
                             },
                             "default_value": [],
                             "allow_null": 0,
@@ -234,5 +233,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1493813628
+    "modified": 1495222023
 }
