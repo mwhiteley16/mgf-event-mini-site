@@ -615,6 +615,9 @@ a.all-speakers {
      font-size: 20px;
      line-height: 26px;
 }
+.venue-content a {
+     color: #fff !important;
+}
 /*---------- 4.6 Sponsors Section ----------*/
 .sp-container {
      float: left;
