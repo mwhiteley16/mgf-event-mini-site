@@ -77,7 +77,8 @@ if( $custom_css || $primary_color || $secondary_color ) : ?>
           h2,
           .team-member-name,
           h1.page-header span,
-		.schedule-date:hover > i.fa {
+		.schedule-date:hover > i.fa,
+          ul#menu-main-menu > li > a:hover {
                color: <?php echo $primary_color; ?>;
           }
           .venue-content-box,
