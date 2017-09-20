@@ -49,6 +49,8 @@ Template Name: Schedule Page Template
                          </div>
 		   	     <?php endif; ?>
 
+                    <?php $toggle_details = get_field( 'schedule_toggle' ); ?>
+
 				<?php if( have_rows('schedule_date') ):
 					$subDateCount = 1;
                          while( have_rows('schedule_date') ): the_row(); ?>
@@ -69,11 +71,15 @@ Template Name: Schedule Page Template
                                                   <div class="schedule-event-item-inner-con <?php the_sub_field('schedule_item_type'); ?>">
                                                        <span class="schedule-item-name"><?php echo $schedule_item_name; ?></span>
                                                        <?php if( !empty( $schedule_item_content ) ) : ?>
-                                                            <i class="fa fa-plus-square"></i>
-                                                            <div class="schedule-item-additional"><?php echo $schedule_item_content; ?></div>
+                                                            <?php if( $toggle_details == 'open' ) : ?>
+                                                                 <i class="fa fa-minus-square"></i>
+                                                            <?php else : ?>
+                                                                 <i class="fa fa-plus-square"></i>
+                                                            <?php endif; ?>
+                                                            <div class="schedule-item-additional toggle-<?php echo $toggle_details; ?>"><?php echo $schedule_item_content; ?></div>
                                                        <?php endif; ?>
                                                        <?php if( $schedule_item_speakers ): ?>
-                                                            <ul class="schedule-speakers-ul">
+                                                            <ul class="schedule-speakers-ul toggle-<?php echo $toggle_details; ?>">
                                                                  <?php $speaker_count = 0; ?>
                                                                  <?php foreach( $schedule_item_speakers as $post) : $speaker_count++; ?>
                                                                       <?php
