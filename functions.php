@@ -16,7 +16,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Mobile Growth Fellowship Events' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
-define( 'CHILD_THEME_VERSION', '1.2.0' );
+define( 'CHILD_THEME_VERSION', '1.5' );
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5' );
