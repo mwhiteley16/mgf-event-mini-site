@@ -10,6 +10,10 @@ This child theme is a template for the Mobile Growth Fellowship mini-sites.
 
 ## Changelog
 
+Version 1.5 (9/20/2017)
+  - Add ACF field to allow schedule items to be all open or closed
+  - Modify JSON, page_account.php & stylesheet to account for changes
+
 Version 1.4 (5/23/2017)
   - Modify custom CSS area to allow for simple color picker color modification
   - Update dropdowns on schedule to allow for simpler coloring
