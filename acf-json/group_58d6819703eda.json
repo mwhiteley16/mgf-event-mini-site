@@ -1,6 +1,6 @@
 {
     "key": "group_58d6819703eda",
-    "title": "Schedule Key Toggle",
+    "title": "Schedule Page Options",
     "fields": [
         {
             "key": "field_58d681af92fce",
@@ -28,6 +28,30 @@
             "ajax": 0,
             "return_format": "value",
             "placeholder": ""
+        },
+        {
+            "key": "field_59ba952b893b2",
+            "label": "Schedule Toggle",
+            "name": "schedule_toggle",
+            "type": "radio",
+            "instructions": "Toggle schedule agendas open\/closed. Default is closed.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "closed": "Closed",
+                "open": "Open"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "closed",
+            "layout": "horizontal",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -47,5 +71,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1490453030
+    "modified": 1505400222
 }
