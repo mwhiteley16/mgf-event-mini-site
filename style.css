@@ -563,6 +563,22 @@ a.home-registration-link:hover {
 	max-height: 125px;
 	max-width: 95%;
 }
+.keynote-companies {
+	text-align: center;
+}
+.keynote-companies .keynote-item {
+	float: none;
+	display: inline-block;
+	max-width: 250px;
+}
+.keynote-item .keynote-title {
+	float: left;
+	width: 100%;
+	margin: 10px 0 10px;
+	color: #990000;
+	font-size: 20px;
+	font-weight: 600;
+}
 /*---------- 4.4 Featured Speakers Section  ----------*/
 .featured-speakers {
      margin: 50px 0;
